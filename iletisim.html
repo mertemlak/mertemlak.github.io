@@ -1,0 +1,373 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gökhan Mert Emlak & İnşaat</title>
+    <link rel="icon" type="image/png" href="favicon-32x32.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+</head>
+<body>
+
+  <header>
+  <p class="ilannn"><strong>İLETİŞİM</strong></p>  
+  <div class="logo"><img class="logoresim" src="yuksekyukseklogo.png" alt="logo"></div> 
+    <input type="checkbox" id="menyAvPaa">
+    <label id="burger" for="menyAvPaa">
+        <div></div>
+        <div></div>
+        <div></div>
+    </label>
+    <nav id="meny">
+      <div class="ornekk"><button onclick="location.href='ilan.html'" type="button"><p class="yaziii"><strong>İLANLAR</strong></p></button></div> 
+      <div class="ornek"><button onclick="location.href='index.html'" type="button"><p class="yazii"><strong>ANA SAYFA</strong></p></button></div>
+    </nav>
+  </header>
+
+  <p class="iletinn">gokhanmertemlak@gmail.com</p>  <p class="iletinnn">0546 464 86 26</p>
+
+  <button class="duzeltme" onclick="location.href='https://wa.me/denemedir'" style="font-size:5rem"><i class="fa fa-whatsapp"></i></button>
+
+  <iframe class="harita" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12265.493406578587!2d30.515583!3d39.776176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc17111284345d%3A0x8d9e6be9ed7f1858!2sG%C3%B6khan%20Mert%20Emlak!5e0!3m2!1str!2str!4v1690020684256!5m2!1str!2str" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<style>
+  
+@media only screen and (max-width: 480px){
+    header {
+      border-top: 2px solid #f5f5f7;
+      border-bottom: 2px solid #f5f5f7;
+      height: 100px;
+      width: 100%;
+      position: fixed;
+      top: 0; 
+      right: 0;
+  }
+  .burger-wrapper {
+    cursor: pointer;
+  }
+  
+  #meny {
+    background: #5a5656;
+    width: 10rem;
+    height: 8.1rem;
+    position: fixed;
+    right: 0.6rem;
+    transition-timing-function: cubic-bezier(10,2,3,1);
+    transform: translateX(50rem);
+    top: 3px;
+    z-index: 0;
+    transition: 0.5s;
+    border-radius: 20px;
+  }
+  #menyAvPaa {
+      display: none;
+  }
+  
+  #menyAvPaa:checked ~ #meny {
+      transform: translateX(0rem);
+  }
+  
+  #burger {
+      position: absolute;
+      cursor: pointer;
+      width: 2.5rem;
+      height: 2rem;
+      right: 1rem;
+      top: 9px;
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+  }
+  
+  #burger > div {
+      height: 3px;
+      background-color: #f5f5f7;
+      transition: 0.5s;
+      z-index: 999;
+  }
+  
+  #menyAvPaa:checked ~ #burger > div {
+    background-color: #f5f5f7;
+    height: 15px;
+  }
+  
+  #menyAvPaa:checked ~ #burger > div:nth-child(1) {
+      transform: translateY(15px) rotate(45deg);
+  }
+  
+  #menyAvPaa:checked ~ #burger > div:nth-child(2) {
+      opacity: 0;
+      transition: 0.1s;
+      height: 365px;  
+  }
+  
+  #menyAvPaa:checked ~ #burger > div:nth-child(3) {
+      transform: translateY(-15px) rotate(-45deg);
+  }
+  
+
+  .ornek button{
+line-height: 0.6;
+box-sizing: border-box;
+background-color: transparent;
+position: relative;
+border-radius: 1.125rem;
+border-color: transparent;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+left: 0.5rem;
+top: 1rem;
+color: #f5f5f7;
+text-align: center;
+font-size: 18px;
+  }
+  
+  .ornek button:hover{
+    background-color: #f5f5f7;
+    color: #0071e3;
+    transition: ease 0.12s;
+  }
+  
+  
+  .ornekk button{
+line-height: 0.6;
+box-sizing: border-box;
+background-color: transparent;
+position: relative;
+border-radius: 1.125rem;
+border-color: transparent;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+left: 0.5rem;
+top: 0.5rem;
+color: #f5f5f7;
+text-align: center;
+font-size: 18px;
+  }
+  
+  .ornekk button:hover{
+    background-color: #f5f5f7;
+    color: #0071e3;
+    transition: ease 0.12s;
+  }
+
+  .duzeltme{
+  text-decoration: none;
+  position: relative;
+  left: 40%;
+  top: 8rem;
+  color: #25D366;
+  font-size: 3rem;
+  font-family: sans-serif;
+  background-color: #f5f5f7;
+  border-radius: 20px;
+  border-color: transparent;
+  }
+
+  .duzeltme:hover{
+    background-color: darkslategray;
+    transition: 0.3s;
+  }
+
+  .iletinn{
+  position: relative;
+  left: 0;
+  top: 8.5rem;
+  color: #f5f5f7;
+  font-size: 1.6rem;
+  font-family: sans-serif;
+
+  }
+  
+  .iletinnn{
+  position: relative;
+  left: 0;
+  top: 8rem;
+  color: #f5f5f7;
+  font-size: 3rem;
+  font-family: sans-serif;
+  font-weight: 400;
+  }
+
+  .logoresim{
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  }
+  .ilannn{
+  position: fixed;
+  left: 12rem;
+  top: 1.8rem;
+  color: white;
+  font-size: xx-large;
+  font-family: sans-serif;
+  }
+
+  .harita{
+    width: 100%; 
+    border-top-right-radius: 60px;
+    border-top-left-radius: 60px;
+    bottom: 0;
+    position: fixed;
+    border-style: groove;
+    background-color: #ffffff;
+    left: 0;
+    height: 160px;
+}
+
+}
+
+
+  @media only screen and (min-width: 480px){
+    .harita{
+    width: 100%; 
+    border-top-right-radius: 4rem;
+    border-top-left-radius: 4rem;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    border-style: groove;
+    background-color: #ffffff;
+    height: 190px;
+}
+
+
+    header {
+      border-top: 2px solid #f5f5f7;
+      border-bottom: 2px solid #f5f5f7;
+      height: 100px;
+      width: 100%;
+      position: fixed;
+      top: 0; 
+      right: 0;
+  }
+
+  .ornek button{
+line-height: 0;
+box-sizing: border-box;
+background-color: transparent;
+position: fixed;
+border-radius:  5px 25px; 
+border-color: #f5f5f7;
+border-style: solid;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+right: 1rem;
+top: 1.1rem;
+color: #f5f5f7;
+text-align: center;
+font-size: 30px;
+}
+
+.ornek button:hover{
+    background-color: #f5f5f7;
+    color: #0071e3;
+    transition: ease 0.12s;
+}
+
+.ornekk button{
+line-height: 0;
+box-sizing: border-box;
+background-color: transparent;
+position: fixed;
+border-radius:  5px 25px; 
+border-color: #f5f5f7;
+border-style: solid;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+right: 15rem;
+top: 1.1rem;
+color: #f5f5f7;
+text-align: center;
+font-size: 30px;
+}
+
+.ornekk button:hover{
+    background-color: #f5f5f7;
+    color: #0071e3;
+    transition: ease 0.12s;
+}
+#menyAvPaa{
+ visibility: hidden; 
+}
+
+  .duzeltme{
+  text-decoration: none;
+  position: absolute;
+  left: 1rem;
+  color: #f5f5f7;
+  font-size: 4rem;
+  font-family: sans-serif;
+  background-color: #25D366;
+  border-radius: 20px;
+  border-color: transparent;
+  top: 20rem;
+  }
+
+  .duzeltme:hover{
+    background-color: darkslategray;
+    transition: 0.2s;
+  }
+
+  .iletinn{
+  position: relative;
+  left: 0;
+  top: 6rem;
+  color: #f5f5f7;
+  font-size: 2.5rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  }
+  
+  .iletinnn{
+  position: relative;
+  left: 0;
+  top: 5rem;
+  color: #f5f5f7;
+  font-size: 3rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-weight: 400;
+  }
+
+  .logoresim{
+  height: 100px;
+  position: fixed;
+  left: 0;
+  top: 0;
+  object-fit: contain;
+  }
+  
+  .ilannn{
+  position: fixed;
+  left: 12rem;
+  top: 1.8rem;
+  color: white;
+  font-size: xx-large;
+  font-family: sans-serif;
+  }
+}
+
+
+
+
+  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600&display=swap');
+  
+  body{
+    -webkit-user-select: none;
+    -webkit-touch-callout: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    background-color: #1c1c1c;
+  }
+  
+
+
+  
+
+  
+  
+  
+  
+ 
+  
+</style>
+</body>
+</html>
