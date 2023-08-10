@@ -23,9 +23,6 @@
   </nav>
 </header>
 
-
-
-
 <form class="sinifim">
 
   <div class="search-bar">
@@ -57,6 +54,9 @@
 </form>
 
 <button class="scroll-top-button" onclick="scrollToTop()">En Başa Dön</button>
+
+
+
 
 
 
@@ -1278,15 +1278,20 @@ header {
   }
 
    #custom-select{
-    left: 11rem;
-    position: relative;
+    left: 3rem;
+    position: absolute;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-size: 1.5rem;
-    border: none;
-    top: 5px;
+    top: 2.8rem;
     border-radius: 10px;
-    background-color: #f5f5f7;
+    background-color: #181818;
+    text-align: center;
+    -webkit-appearance: blue; -moz-appearance: blue; appearance: blue;
+    padding: 0.1rem;
+    color:  #f5f5f7;
    }
+
+  
 
    #custom-select option{
     background-color: #000000;
@@ -1360,6 +1365,7 @@ header {
   margin: 0;
   padding: 0;
   scroll-behavior: smooth;
+  text-align: center;
 }
 
 
@@ -1439,11 +1445,10 @@ font-size: 30px;
 
 
   .sinifim {
-    top: 7rem;
-    position: absolute;
-    margin:0;
-    padding: 0;
-    left: 0;
+    display: inline-block;
+    vertical-align: middle;
+    top: 6rem;
+    position: relative;
   }
 
   .search-bar {
@@ -1460,6 +1465,7 @@ font-size: 30px;
     text-align: center;
     padding-right: 0; /* Add some space for the buttons */
     border-radius: 25px;
+    width: 75%
   }
 
   .search-button,
