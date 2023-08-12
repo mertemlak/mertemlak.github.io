@@ -19,12 +19,13 @@
 <nav id="meny"> 
   <div class="ornekk"><button onclick="location.href='iletisim.html'" type="button"><p class="yaziii"><strong>İLETİŞİM</strong></p></button></div>
   <div class="ornek"><button onclick="location.href='ilan.html'" type="button"><p class="yazii"><strong>İLANLAR</strong></p></button></div>
+  <p class="und">VE</p>
 </nav>
 </header>
 
 <img class="logoresim" src="yuksekyukseklogo.png" alt="logo"> 
 
-<div class="eser"><p><strong>Tasarım & Uygulama:</strong> Berat Can TURSUN <a href="https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL"><svg style="color: rgb(54, 69, 79);" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="#36454f"></path> </svg></a></p></div>
+
 
 <script>
       document.addEventListener('keydown', function(event) {
@@ -54,6 +55,7 @@ body{
 
 @media only screen and (max-width: 480px) {
 
+
 header{
     border-top: 2px solid #f5f5f7;
     height: 8rem;
@@ -61,141 +63,89 @@ header{
     position: fixed;
     top: 0; 
     right: 0;
-    border-bottom: 2px solid #f5f5f7;
 }
 
-.eser{
-  bottom: 0;
-  position: fixed;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 13px;
-  font-weight: 400;
-  text-align: center;
-  color: #b1afaf;
-  right: 0;
-}
 
-.zanaatkar{
-  background-color: #313030;
-  border-radius: 50%;
-  border-color: transparent;
-  object-fit: cover;
-}
 
 .logoresim{
-height: 8rem;
-position: fixed;
-left: 0;
-top: 0;
+height: 10rem;
+margin: auto;
+display: flex;
+position: relative;
 object-fit: contain;
 z-index: -999;
 }
 
-
-  .burger-wrapper {
-  cursor: pointer;
-}
-
-#meny {
-    background: #5a5656;
-    width: 10rem;
-    height: 8.1rem;
-    position: fixed;
-    right: 0.6rem;
-    transition-timing-function: cubic-bezier(10,2,3,1);
-    transform: translateX(50rem);
-    top: 2px;
-    z-index: 0;
-    transition: 0.5s;
-    border-radius: 25px 5px; 
-}
-#menyAvPaa {
-    display: none;
-}
-
-#menyAvPaa:checked ~ #meny {
-    transform: translateX(0rem);
-}
-
-#burger {
-    position: absolute;
-    cursor: pointer;
-    width: 2.5rem;
-    height: 2rem;
-    right: 1rem;
-    top: 9px;
-    display: flex;
-    justify-content: space-between;
-    flex-direction: column;
-}
-
-#burger > div {
-    height: 3px;
-    background-color: #f5f5f7;
-    transition: 0.5s;
-    z-index: 999;
-}
-
-#menyAvPaa:checked ~ #burger > div {
-  background-color: #f5f5f7;
-  height: 15px;
-}
-
-#menyAvPaa:checked ~ #burger > div:nth-child(1) {
-    transform: translateY(15px) rotate(45deg);
-}
-
-#menyAvPaa:checked ~ #burger > div:nth-child(2) {
-    opacity: 0;
-    transition: 0.1s;
-    height: 365px;  
-}
-
-#menyAvPaa:checked ~ #burger > div:nth-child(3) {
-    transform: translateY(-15px) rotate(-45deg);
+#menyAvPaa{
+ visibility: hidden; 
 }
 
 .ornek button{
-line-height: 0.6;
+line-height: 0;
 box-sizing: border-box;
 background-color: transparent;
-position: relative;
-border-radius: 1.125rem;
+border-radius:  5px 25px; 
 border-color: transparent;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-left: 0.5rem;
-top: 0.5rem;
 color: #f5f5f7;
 text-align: center;
-font-size: 18px;
+font-size: 38px;
+border-color: #f5f5f7;
+border-style: solid;
+margin: auto;
+display: flex;
+position: relative;
+top: 7rem;
+box-shadow: 1px 1px 20px 1px #b8b8b8;
 }
 
 .ornek button:hover{
     background-color: #f5f5f7;
     color: #0071e3;
-    transition: ease 0.12s;
+    transition: ease 0.10s;
 }
 
 .ornekk button{
-line-height: 0.6;
+line-height: 0;
 box-sizing: border-box;
 background-color: transparent;
-position: relative;
-border-radius: 1.125rem;
+border-radius:  5px 25px; 
 border-color: transparent;
 font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-left: 0.5rem;
-top: 0.5rem;
 color: #f5f5f7;
 text-align: center;
-font-size: 18px;
+font-size: 38px;
+border-color: #f5f5f7;
+border-style: solid;
+margin: auto;
+display: flex;
+position: relative;
+top: 23rem;
+box-shadow: 1px 1px 20px 1px #b8b8b8;
 }
 
 .ornekk button:hover{
     background-color: #f5f5f7;
     color: #0071e3;
-    transition: ease 0.12s;
+    transition: ease 0.10s;
 }
+
+.und{
+line-height: 0;
+box-sizing: border-box;
+background-color: transparent;
+border-radius:  5px 25px; 
+border-color: transparent;
+font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+color: #f5f5f7;
+font-size: 38px;
+position: relative;
+top: 7.5rem;
+font-weight: 600;
+text-align: center;
+}
+
+
 }
 
 
@@ -281,38 +231,10 @@ left: 10.5rem;
  visibility: hidden; 
 }
 
-.eser{
-  bottom: 1rem;
-  right: 2.5rem;
-  position: absolute;
-  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  font-size: 15px;
-  font-weight: 400;
-  color: #b4b4b4;
+.und{
+  visibility: hidden;
 }
 
-.zanaatkar{
-  border-color: transparent;
-  border-radius: 50%;
-  background-color: #f5f5f7;
-}
-
-.eser p::after{
-  position: absolute;
-  bottom: 0.85rem;
-  content: "";
-  height: 2px;
-  width: 100%;
-  left: 0; 
-  background-color: #f5f5f7;
-  transition: 0.3s;
-  transition-timing-function: ease-in-out;
-  transform: scaleX(0);
-}
-
-.eser p:hover::after{
-  transform: scaleX(1);
-}
 
 }
 

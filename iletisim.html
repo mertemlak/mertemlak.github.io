@@ -26,9 +26,13 @@
 
   <p class="iletinn">gokhanmertemlak@gmail.com</p>  <p class="iletinnn">0546 464 86 26</p>
 
-  <button class="duzeltme" onclick="location.href='https://wa.me/denemedir'" style="font-size:6rem"><i class="fa fa-whatsapp"></i></button>
+  <button class="duzeltme" onclick="location.href='https://wa.me/5464648626'" style="font-size:6rem"><i class="fa fa-whatsapp"></i></button>
 
   <iframe class="harita" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12265.493406578587!2d30.515583!3d39.776176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc17111284345d%3A0x8d9e6be9ed7f1858!2sG%C3%B6khan%20Mert%20Emlak!5e0!3m2!1str!2str!4v1690020684256!5m2!1str!2str" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  <div class="eser"><p><strong>Tasarım & Uygulama:</strong> Berat Can TURSUN <a href="https://www.facebook.com/profile.php?id=100093580601707&mibextid=ZbWKwL"><svg style="color: rgb(59, 89, 152);" xmlns="http://www.w3.org/2000/svg" width="21" height="21" fill="currentColor" class="bi bi-facebook" viewBox="0 0 16 16"> <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z" fill="#3b5998"></path> </svg></a></p></div>
+
+
 
 <script>
       document.addEventListener('keydown', function(event) {
@@ -41,6 +45,25 @@
 <style>
   
 @media only screen and (max-width: 480px){
+
+  .eser{
+  bottom: 0;
+  position: fixed;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  text-align: center;
+  color: #b1afaf;
+  right: 0.5rem;
+}
+
+.zanaatkar{
+  background-color: #313030;
+  border-radius: 50%;
+  border-color: transparent;
+  object-fit: cover;
+}
+
     header {
       border-top: 2px solid #f5f5f7;
       border-bottom: 2px solid #f5f5f7;
@@ -65,7 +88,7 @@
     top: 3px;
     z-index: 0;
     transition: 0.5s;
-    border-radius: 20px;
+    border-radius: 25px 5px;
   }
   #menyAvPaa {
       display: none;
@@ -162,7 +185,7 @@ font-size: 18px;
   margin: auto;
   display: flex;
   position: relative;
-  top: 5rem;
+  top: 6rem;
   color: #25D366;
   font-size: 3rem;
   font-family: sans-serif;
@@ -215,27 +238,65 @@ font-size: 18px;
 
   .harita{
     width: 100%; 
-    border-top-right-radius: 60px;
-    border-top-left-radius: 60px;
-    bottom: 0;
-    position: fixed;
+    border-radius: 3rem;
+    top: 8rem;
+    margin: auto;
+    display: flex;
+    position: relative;
     border-style: groove;
     background-color: #ffffff;
-    left: 0;
-    height: 160px;
+    height: 165px;
 }
 
 }
 
 
   @media only screen and (min-width: 480px){
+
+    .eser{
+  bottom: 0;
+  left: 0.5rem;
+  position: absolute;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+  font-size: 15px;
+  font-weight: 400;
+  color: #b4b4b4;
+}
+
+.zanaatkar{
+  border-color: transparent;
+  border-radius: 50%;
+  background-color: #f5f5f7;
+}
+
+.eser p::after{
+  position: absolute;
+  bottom: 0.85rem;
+  content: "";
+  height: 2px;
+  width: 100%;
+  left: 0; 
+  background-color: #f5f5f7;
+  transition: 0.3s;
+  transition-timing-function: ease-in-out;
+  transform: scaleX(0);
+}
+
+.eser p:hover::after{
+  transform: scaleX(1);
+}
+
+
+
+
     .harita{
     width: 100%; 
-    border-top-right-radius: 6rem;
-    border-top-left-radius: 6rem;
-    bottom: 0;
+    border-radius: 6rem;
+    bottom: 2rem;
     left: 0;
-    position: absolute;
+    margin: auto;
+    display: flex;
+    position: relative;
     border-style: groove;
     background-color: #ffffff;
     height: 190px;
