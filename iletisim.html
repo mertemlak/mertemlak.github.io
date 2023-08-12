@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="initial-scale=1, viewport-fit=cover, width=device-width, user-scalable=no">
     <title>Gökhan Mert Emlak & İnşaat</title>
     <link rel="icon" type="image/png" href="favicon-32x32.png">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
@@ -26,9 +26,18 @@
 
   <p class="iletinn">gokhanmertemlak@gmail.com</p>  <p class="iletinnn">0546 464 86 26</p>
 
-  <button class="duzeltme" onclick="location.href='https://wa.me/denemedir'" style="font-size:5rem"><i class="fa fa-whatsapp"></i></button>
+  <button class="duzeltme" onclick="location.href='https://wa.me/denemedir'" style="font-size:6rem"><i class="fa fa-whatsapp"></i></button>
 
   <iframe class="harita" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12265.493406578587!2d30.515583!3d39.776176!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14cc17111284345d%3A0x8d9e6be9ed7f1858!2sG%C3%B6khan%20Mert%20Emlak!5e0!3m2!1str!2str!4v1690020684256!5m2!1str!2str" height="150" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+<script>
+      document.addEventListener('keydown', function(event) {
+        if (event.ctrlKey && (event.key === 'u' || event.key === 'U')) {
+            event.preventDefault();
+        }
+    });
+</script>
+
 <style>
   
 @media only screen and (max-width: 480px){
@@ -290,15 +299,16 @@ font-size: 30px;
 
   .duzeltme{
   text-decoration: none;
-  position: absolute;
-  left: 2rem;
+  margin: auto;
+  display: flex;;
   color: #f5f5f7;
-  font-size: 4rem;
+  font-size: 5rem;
   font-family: sans-serif;
   background-color: #25D366;
-  border-radius: 20px;
+  border-radius: 28px;
   border-color: transparent;
-  top: 18rem;
+  top: 0;
+  position: relative;
   }
 
   .duzeltme:hover{
@@ -311,7 +321,7 @@ font-size: 30px;
   left: 0;
   top: 6rem;
   color: #f5f5f7;
-  font-size: 2.5rem;
+  font-size: 3rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   }
@@ -321,7 +331,7 @@ font-size: 30px;
   left: 0;
   top: 5rem;
   color: #f5f5f7;
-  font-size: 3rem;
+  font-size: 4rem;
   font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   font-weight: 400;
   }
